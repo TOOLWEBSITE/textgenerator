@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online fancy text generator tool. Create stylish, cool, and unique text for social media, gaming, and more. Works with Google Search Console.">
+    <meta name="keywords" content="fancy text generator, stylish text, cool fonts, unicode text, social media fonts, text converter">
+    <meta name="author" content="Fancy Text Generator">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Fancy Text Generator | Create Stylish Text for Social Media">
+    <meta property="og:description" content="Generate fancy text styles instantly. Perfect for social media bios, gaming names, and more.">
+    <meta property="og:image" content="/assets/og-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fancy Text Generator | Create Stylish Text for Social Media</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fancy Text Generator</h1>
+            <p class="subtitle">Create stylish, cool, and unique text for social media, gaming, and more</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="input-section">
+            <div class="form-group">
+                <label for="input-text">Enter your text here:</label>
+                <textarea id="input-text" placeholder="Type something amazing..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="font-style">Select text style:</label>
+                <select id="font-style">
+                    <option value="normal">Normal Text</option>
+                    <option value="bold">Bold Text</option>
+                    <option value="italic">Italic Text</option>
+                    <option value="bold-italic">Bold Italic</option>
+                    <option value="cursive">Cursive</option>
+                    <option value="double-struck">Double Struck</option>
+                    <option value="fraktur">Fraktur</option>
+                    <option value="script">Script</option>
+                    <option value="sans-serif">Sans-Serif</option>
+                    <option value="monospace">Monospace</option>
+                    <option value="circled">Circled</option>
+                    <option value="parenthesized">Parenthesized</option>
+                    <option value="square">Squared</option>
+                    <option value="inverted">Inverted Squares</option>
+                    <option value="small-caps">Small Caps</option>
+                    <option value="upside-down">Upside Down</option>
+                </select>
+            </div>
+            
+            <button id="generate-btn">Generate Fancy Text</button>
+            <button id="copy-btn" disabled>Copy to Clipboard</button>
+            <button id="clear-btn">Clear</button>
+        </section>
+
+        <section class="output-section">
+            <h2>Your Fancy Text:</h2>
+            <div class="output-container">
+                <div id="output-text" aria-live="polite"></div>
+            </div>
+            <div class="char-count">Characters: <span id="char-count">0</span></div>
+        </section>
+
+        <section class="preview-section">
+            <h2>Preview:</h2>
+            <div class="preview-container">
+                <div id="preview-text">Your fancy text will appear here...</div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>About This Tool</h2>
+            <p>This fancy text generator converts normal text into stylish, eye-catching text using Unicode characters. The generated text works on most social media platforms, games, and websites.</p>
+            <p>Simply type your text, select a style, and click "Generate". Then copy and paste the result wherever you need it!</p>
+            
+            <h3>Common Uses:</h3>
+            <ul>
+                <li>Social media bios (Instagram, Facebook, Twitter, TikTok)</li>
+                <li>Gaming usernames</li>
+                <li>YouTube channel names</li>
+                <li>Discord server names</li>
+                <li>Creative projects</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Fancy Text Generator. All rights reserved.</p>
+            <nav>
+                <a href="/" class="active">Home</a>
+                <a href="privacy.html" class="active">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
