@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+Disallow: /temp/
+
+Sitemap: https://toolwebsite.github.io/textgenerator/sitemap.xml
