@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Fancy Text Generator</title>
+    <meta name="description" content="Contact the Fancy Text Generator team.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="subtitle">We'd love to hear from you!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <h2>Email Us</h2>
+                    <p>For general inquiries:</p>
+                    <a href="mailto:blog199211@gmail.com" class="contact-link">blog199211@gmail.com</a>
+                    
+                    <h3>Support</h3>
+                    <p>For technical support:</p>
+                    <a href="mailto:blog199211@gmail.com" class="contact-link">blog199211@gmail.com</a>
+                </div>
+                
+                <div class="contact-card">
+                    <h2>Feedback</h2>
+                    <p>We appreciate your feedback to improve our tool.</p>
+                    <form id="feedback-form">
+                        <div class="form-group">
+                            <label for="name">Your Name (optional)</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email (optional)</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit">Send Feedback</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>Is the Fancy Text Generator free to use?</h3>
+                    <p>Yes, our tool is completely free to use with no hidden charges.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Does the tool store my generated text?</h3>
+                    <p>No, all text processing happens in your browser. We don't store any of the text you generate.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can I use the generated text commercially?</h3>
+                    <p>Yes, the text you generate is yours to use as you wish, including for commercial purposes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Fancy Text Generator. All rights reserved.</p>
+            <nav>
+                <a href="index.html" class="active">Home</a></li>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Handle feedback form submission
+            const feedbackForm = document.getElementById('feedback-form');
+            if (feedbackForm) {
+                feedbackForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // In a real implementation, you would send this data to your server
+                    alert('Thank you for your feedback! In a live version, this would be sent to our team.');
+                    feedbackForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
