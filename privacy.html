@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Fancy Text Generator</title>
+    <meta name="description" content="Privacy policy for Fancy Text Generator. Learn how we handle your data.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Last Updated: <span id="current-date"></span></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>1. Information We Collect</h2>
+            <p>Our Fancy Text Generator tool does not store or collect any personal information that you enter into the tool. All text processing happens locally in your browser.</p>
+            
+            <h2>2. Cookies and Tracking</h2>
+            <p>We use only essential cookies necessary for the basic functionality of the website. We do not use any tracking cookies or third-party analytics services.</p>
+            
+            <h2>3. Third-Party Services</h2>
+            <p>Our website is hosted on standard web hosting services. These services may collect standard server logs including your IP address, browser type, and access times for security and maintenance purposes.</p>
+            
+            <h2>4. Children's Privacy</h2>
+            <p>Our service does not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13.</p>
+            
+            <h2>5. Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+            
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us through our <a href="contact.html">contact page</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Fancy Text Generator. All rights reserved.</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="privacy.html" class="active">Privacy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Set current date in header
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', options);
+        });
+    </script>
+</body>
+</html>
